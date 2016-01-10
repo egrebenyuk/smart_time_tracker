@@ -1,0 +1,3 @@
+<p>Welcome to project page!</p>
+<p>Project Name:  <%= @project.name %></p>
+<p><%= button_to "Show Invoice!", project_path(@project, :format => 'pdf'), :class => "button", :method => :get %></p>

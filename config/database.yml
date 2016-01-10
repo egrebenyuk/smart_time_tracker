@@ -81,5 +81,5 @@ test:
 production:
   <<: *default
   database: smart_time_tracker_production
-  username: smart_time_tracker
-  password: <%= ENV['SMART_TIME_TRACKER_DATABASE_PASSWORD'] %>
+ # username: smart_time_tracker
+ # password: <%= ENV['SMART_TIME_TRACKER_DATABASE_PASSWORD'] %>
