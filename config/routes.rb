@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   root "projects#show"
-  resources :user
-  resources :company
+  resources :users
+  resources :companies
   resources :projects
+  resource :tasks
 end

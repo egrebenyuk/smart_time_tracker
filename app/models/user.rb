@@ -1,5 +1,8 @@
 class User < ActiveRecord::Base
+  has_many :tasks
+  
   before_save { self.email = email.downcase }
+
   [:first_name, :last_name].each do |column|
     validates column, presence: true, length: { maximum: 30 }
   end
